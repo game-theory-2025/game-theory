@@ -60,6 +60,7 @@ This React application allows users to analyze the competitiveness of a two-play
 
 ## Project Structure
 
+```
 react-game-checker/
 ├── src/                      # Source directory for the application code
 │   ├── components/           
@@ -79,7 +80,7 @@ react-game-checker/
 │   ├── index.css             # Global styles for the application
 │   └── main.jsx              # Entry point for the React application
 └── README.md                 # Documentation for the project
-
+```
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
