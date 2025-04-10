@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import MatrixInput from '../components/MatrixInput';
 import SortSelection from '../components/SortSelection';
 import ResultDisplay from '../components/ResultDisplay';
-import { processMatrices } from '../utils/logic';
+import { Game } from '../utils/Game';
 
 function Home () {
   const [rows, setRows] = useState('');
@@ -15,7 +15,8 @@ function Home () {
   const [sortedPayoffs, setSortedPayoffs] = useState(null);
 
   const handleCalculate = () => {
-    const [resultText, sortedPayoffsArray] = processMatrices(matrix1, matrix2, sortMethod);
+    const game = new Game(matrix1, matrix2);
+    const [resultText, sortedPayoffsArray] = game.process(sortMethod);
     setResult(resultText);
     setSortedPayoffs(sortedPayoffsArray);
   };
