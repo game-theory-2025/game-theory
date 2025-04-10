@@ -9,6 +9,9 @@ export default function Header () {
               <Link to="/">Game Checker</Link>
             </li>
             <li>
+              <Link to="/simplify">Simplify</Link>
+            </li>
+            <li>
               <Link to="/about">About</Link>
             </li>
           </ul>
