@@ -7,7 +7,7 @@ import Layout from './components/Layout';
 
 function App () {
   return (
-    <Router>
+    <Router basename='/game-theory/'>
       <div>
         <Routes>
           <Route path="/" element={<Layout> <Home /> </Layout>} />
